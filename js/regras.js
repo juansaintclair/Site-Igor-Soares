@@ -9,62 +9,28 @@
 
 $(function () {
 
-    $("#slider-noticias-home").owlCarousel({
+	// Carrossel em qualquer div com nome slider-*
+    $("div[id*='slider-']").owlCarousel({
         singleItem: true,
         pagination: false
     });
 
-    $("#slider-videos-home").owlCarousel({
-        singleItem: true,
-        pagination: false
-    });
+	// Navegadores dos carrosseis (avançar e voltar)
+	$('i[class*="slider-seta-direita-"]').on('click', function(){
+		var carrossel = $(this)
+							.parents('span')
+							.next('div')
+							.data('owlCarousel');
+		carrossel.next();
+	});
 
-    $("#slider-podcast-xs-home").owlCarousel({
-        singleItem: true,
-        pagination: false
-    });
-
-    $("#slider-noticias-home-xs").owlCarousel({
-        singleItem: true,
-        pagination: false
-    });
-
-
-
-    /* Botões Slider Noticias */
-    var owl = $("#slider-noticias-home").data('owlCarousel');
-    $('.slider-seta-direita-novidades').on('click', function () {
-        owl.next();
-    });
-    $('.slider-seta-esquerda-novidades').on('click', function () {
-        owl.prev();
-    });
-
-    /* Botões Slider Videos */
-    var owl2 = $("#slider-videos-home").data('owlCarousel');
-    $('.slider-seta-direita-videos').on('click', function () {
-        owl2.next();
-    });
-    $('.slider-seta-esquerda-videos').on('click', function () {
-        owl2.prev();
-    });
-
-    var owl3 = $("#slider-podcast-xs-home").data('owlCarousel');
-    $('.slider-seta-direita-podcast-xs').on('click', function () {
-        owl3.next();
-    });
-    $('.slider-seta-esquerda-podcast-xs').on('click', function () {
-        owl3.prev();
-    });
-
-    var owl4 = $("#slider-noticias-home-xs").data('owlCarousel');
-    $('.slider-seta-direita-novidades-xs').on('click', function () {
-        owl4.next();
-    });
-    $('.slider-seta-esquerda-novidades-xs').on('click', function () {
-        owl4.prev();
-    });
-
+	$('i[class*="slider-seta-esquerda-"]').on('click', function(){
+		var carrossel = $(this)
+							.parents('span')
+							.next('div')
+							.data('owlCarousel');
+		carrossel.prev();
+	});
 
     /* Ativador da "Wilma */
     var dlgTrigger = document.querySelectorAll('[data-dialog]');
