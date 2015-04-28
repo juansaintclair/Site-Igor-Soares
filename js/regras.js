@@ -7,8 +7,7 @@
  */
 /* global $, window, setTimeout, document, DialogFx */
 
-$(function () {
-
+function preparaCarrossel(){
 	// Carrossel em qualquer div com nome slider-*
     $("div[id*='slider-']").owlCarousel({
         singleItem: true,
@@ -31,8 +30,13 @@ $(function () {
 							.data('owlCarousel');
 		carrossel.prev();
 	});
+}
 
-    /* Ativador da "Wilma */
+$(function () {
+
+	preparaCarrossel();
+
+    /* Ativador da "Wilma" */
     var dlgTrigger = document.querySelectorAll('[data-dialog]');
     var someDialog, dlg;
     for (var i = 0; i < dlgTrigger.length; i++) {
