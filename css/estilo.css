@@ -751,12 +751,12 @@ h1 {
 }
 
 .animate-children {
-    padding-left: 180px;
+    float: right;
 /*    -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-	*/
+*/
     padding-top: 10px!important;
     padding-bottom: 10px!important;
 }
@@ -764,7 +764,8 @@ h1 {
 .animate-social-menu {
     padding-top: 10px!important;
     padding-bottom: 10px!important;
-    /*-moz-transition: all .2s ease-in;
+    /*
+    -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;*/
@@ -839,11 +840,20 @@ h1 {
     .animate-children {
         padding-left: 30px!important;
     }
+    .alinhamento-xs-menu {
+        float: left!important;
+    }
+    
+    .navbar-default .container {
+        height: 50px;
+    }
+
 }
 
 .form-control {
     box-shadow: none;
 }
+
 
 @-moz-document url-prefix() { 
   .social-media-baixo-icons {

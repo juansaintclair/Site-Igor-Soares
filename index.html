@@ -107,13 +107,29 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 
-            <div class="pull-left show-logo hidden-xs">
+            <div class="pull-left show-logo hidden-xs hidden-md hidden-sm">
                 <a href="#"> <img src="images/logo-menu.png" alt="">
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1">
 
+            <div id="btn-social-media-menu-xs" class="pull-right hidden-xs">
+                <ul id="btn-social-media-menu" class="nav navbar-nav navbar-right social-media-menu">
+                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-youtube-play fa-lg"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-flickr fa-lg"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>.
+
+            <div class="collapse navbar-collapse pull-left alinhamento-xs-menu" id="bs-example-navbar-collapse-1">
+               
                 <ul class="nav navbar-nav menuprincipal">
                     <li class="active dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Conheça o Deputado </a>
@@ -175,21 +191,6 @@
                 </ul>
 
             </div>
-            <div id="btn-social-media-menu-xs" class="pull-right hidden-xs">
-                <ul id="btn-social-media-menu" class="nav navbar-nav navbar-right social-media-menu">
-                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-youtube-play fa-lg"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-flickr fa-lg"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a>
-                    </li>
-                </ul>
-            </div>
-
 
             <!-- /.navbar-collapse -->
         </div>
@@ -261,8 +262,8 @@
                 </span>
 
                 <div id="slider-noticias-home" class="container-slider-noticias-home">
-                    
-                    
+
+
 
                     <div class="hidden-xs">
                         <img src="images/noticias/1.jpg" class="img-responsive" alt="">
@@ -294,19 +295,8 @@
                 <div id="slider-noticias-home-xs" class="container-slider-noticias-home visible-xs-block">
 
                     <!-- Repetir aqui o conteúdo do slider acima, pois muda a estrutura pro mobile -->
-                     <div class="ativar-shadow-videos">
-                            <div class="img-shadow-videos visible-xs-block">
-                                <div class="img-shadow-videos visible-xs-block">
-                                    <img src="images/noticias/1.jpg" class="img-responsive" alt="">
-                                    <div class="txt-slider-videos text-left">
-                                        <h2>Saúde e combate à dengue </h2>
-                                        <p>Confira as dicas do deputado para a saúde e o combate à dengue</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ativar-shadow-videos">
+                    <div class="ativar-shadow-videos">
+                        <div class="img-shadow-videos visible-xs-block">
                             <div class="img-shadow-videos visible-xs-block">
                                 <img src="images/noticias/1.jpg" class="img-responsive" alt="">
                                 <div class="txt-slider-videos text-left">
@@ -315,16 +305,27 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="ativar-shadow-videos">
-                            <div class="img-shadow-videos visible-xs-block">
-                                <img src="images/noticias/1.jpg" class="img-responsive" alt="">
-                                <div class="txt-slider-videos text-left">
-                                    <h2>Saúde e combate à dengue </h2>
-                                    <p>Confira as dicas do deputado para a saúde e o combate à dengue</p>
-                                </div>
+                    <div class="ativar-shadow-videos">
+                        <div class="img-shadow-videos visible-xs-block">
+                            <img src="images/noticias/1.jpg" class="img-responsive" alt="">
+                            <div class="txt-slider-videos text-left">
+                                <h2>Saúde e combate à dengue </h2>
+                                <p>Confira as dicas do deputado para a saúde e o combate à dengue</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="ativar-shadow-videos">
+                        <div class="img-shadow-videos visible-xs-block">
+                            <img src="images/noticias/1.jpg" class="img-responsive" alt="">
+                            <div class="txt-slider-videos text-left">
+                                <h2>Saúde e combate à dengue </h2>
+                                <p>Confira as dicas do deputado para a saúde e o combate à dengue</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -339,8 +340,8 @@
                         <i class="fa fa-chevron-right slider-seta-direita-videos"></i>
                     </span>
 
-                    <div id="slider-videos-home">                       
-                       
+                    <div id="slider-videos-home">
+
                         <div class="ativar-shadow-videos">
 
                             <img src="images/videos/1.jpg" class="img-responsive" alt="">
@@ -596,7 +597,8 @@
                     </li>
                     <li><a href="#">Visão</a>
                     </li>
-                    <li><a href="#">Valores</a></li>
+                    <li><a href="#">Valores</a>
+                    </li>
 
                 </ul>
 

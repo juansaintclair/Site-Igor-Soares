@@ -118,8 +118,10 @@ function eventScroll() {
 		if ($(window).scrollTop() > secondaryNavTopPosition) {
 			secondaryNav.addClass('is-fixed');
 			setTimeout(function () {
-				$('#bs-example-navbar-collapse-1').addClass('animate-children', 'fast');
-				$('#btn-social-media-menu-xs').addClass('animate-social-menu', 'fast');
+                $('#bs-example-navbar-collapse-1').addClass('pull-right', 'fast');
+                $('#bs-example-navbar-collapse-1').removeClass('pull-left', 'fast');
+                $('#bs-example-navbar-collapse-1').addClass('animate-children', 'fast');
+				$('#btn-social-media-menu-xs').addClass('animate-children', 'fast');
 
 				$(".show-logo").slideDown("fast", function () {
 				});
@@ -129,8 +131,10 @@ function eventScroll() {
 			setTimeout(function () {
 
 				$(".show-logo").slideUp("fast", function () {
+                    $('#bs-example-navbar-collapse-1').addClass('pull-left', 'fast');
+                    $('#bs-example-navbar-collapse-1').removeClass('pull-right', 'fast');
 					$('#bs-example-navbar-collapse-1').removeClass('animate-children', 'fast');
-					$('#btn-social-media-menu-xs').removeClass('animate-social-menu', 'fast');
+					$('#btn-social-media-menu-xs').removeClass('animate-children', 'fast');
 				});
 
 			}, 50);
