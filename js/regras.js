@@ -101,15 +101,17 @@ function eventScroll() {
 				$('#bs-example-navbar-collapse-1').addClass('animate-children');
 				$('#btn-social-media-menu-xs').addClass('animate-social-menu');
 
-				$(".show-logo").slideDown("fast", function () {});
+				$(".show-logo").slideDown("fast", function () {
+				});
 			}, 50);
 		} else {
 			secondaryNav.removeClass('is-fixed');
 			setTimeout(function () {
-				$('#bs-example-navbar-collapse-1').removeClass('animate-children');
-				$('#btn-social-media-menu-xs').removeClass('animate-social-menu');
 
-				$(".show-logo").slideUp("fast", function () {});
+				$(".show-logo").slideUp("fast", function () {
+					$('#bs-example-navbar-collapse-1').removeClass('animate-children');
+					$('#btn-social-media-menu-xs').removeClass('animate-social-menu');
+				});
 
 			}, 50);
 		}
