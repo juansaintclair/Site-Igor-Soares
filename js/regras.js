@@ -73,6 +73,26 @@ $(function () {
 
 	$(window).resize(resizeBrowser);
 
+	var travarMouseIcons = false;
+
+	$('.social-media-baixo-icons').mouseover(function(){
+		if (travarMouseIcons === false) {
+			$(this).animate({
+				"bottom": "+=15px"
+			}, 200);
+			travarMouseIcons = true;		
+		}
+	});
+
+	$('.social-media-baixo-icons').mouseleave(function(){
+		
+		$(this).animate({
+			"bottom": "-=15px"
+		}, 200);
+		travarMouseIcons = false;
+
+	});
+
 });
 
 function resizeBrowser() {
