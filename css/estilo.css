@@ -840,3 +840,7 @@ h1 {
         padding-left: 30px!important;
     }
 }
+
+.form-control {
+    box-shadow: none;
+}
