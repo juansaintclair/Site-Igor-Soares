@@ -98,8 +98,8 @@ function eventScroll() {
 		if ($(window).scrollTop() > secondaryNavTopPosition) {
 			secondaryNav.addClass('is-fixed');
 			setTimeout(function () {
-				$('#bs-example-navbar-collapse-1').addClass('animate-children');
-				$('#btn-social-media-menu-xs').addClass('animate-social-menu');
+				$('#bs-example-navbar-collapse-1').addClass('animate-children', 'fast');
+				$('#btn-social-media-menu-xs').addClass('animate-social-menu', 'fast');
 
 				$(".show-logo").slideDown("fast", function () {
 				});
@@ -109,8 +109,8 @@ function eventScroll() {
 			setTimeout(function () {
 
 				$(".show-logo").slideUp("fast", function () {
-					$('#bs-example-navbar-collapse-1').removeClass('animate-children');
-					$('#btn-social-media-menu-xs').removeClass('animate-social-menu');
+					$('#bs-example-navbar-collapse-1').removeClass('animate-children', 'fast');
+					$('#btn-social-media-menu-xs').removeClass('animate-social-menu', 'fast');
 				});
 
 			}, 50);

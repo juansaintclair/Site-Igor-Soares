@@ -227,7 +227,7 @@ h1 {
 }
 
 .icon-bar:hover,
-.icon-bar:focus,
+.icon-bar:focus
 {
     background-color: #f6c93b!important;
 }
@@ -269,7 +269,7 @@ h1 {
     font-size: 10px;
 }
 
-.twitter-plugin .cinza-claro a:link,
+.twitter-plugin .cinza-claro a:link
 {
     color: #d1d1d1;
     font-size: 10px;
@@ -279,7 +279,7 @@ h1 {
     color: #d1d1d1;
 }
 
-.twitter-plugin .cinza-claro a:link,
+.twitter-plugin .cinza-claro a:link
 {
     color: #d1d1d1;
     font-size: 10px;
