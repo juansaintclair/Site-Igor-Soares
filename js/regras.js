@@ -100,7 +100,7 @@ function eventScroll() {
 			setTimeout(function () {
 				$('#bs-example-navbar-collapse-1').addClass('animate-children');
 				$('#btn-social-media-menu-xs').addClass('animate-social-menu');
-				// $('.show-logo').addClass('slide-in');
+
 				$(".show-logo").slideDown("fast", function () {});
 			}, 50);
 		} else {
@@ -108,7 +108,7 @@ function eventScroll() {
 			setTimeout(function () {
 				$('#bs-example-navbar-collapse-1').removeClass('animate-children');
 				$('#btn-social-media-menu-xs').removeClass('animate-social-menu');
-				//$('.show-logo').removeClass('slide-in');
+
 				$(".show-logo").slideUp("fast", function () {});
 
 			}, 50);
