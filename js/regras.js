@@ -142,7 +142,8 @@ function preparaCarrossel() {
 	// Carrossel em qualquer div com nome slider-*
 	$("div[id*='slider-']").owlCarousel({
 		singleItem: true,
-		pagination: false
+		pagination: false,
+		transitionStyle: 'fade'
 	});
 
 	// Navegadores dos carrosseis (avançar e voltar)
