@@ -226,12 +226,13 @@ h1 {
     z-index: 9000;
 }
 
+/*
 .icon-bar:hover,
 .icon-bar:focus
 {
     background-color: #f6c93b!important;
 }
-
+*/
 .social-media-meio {
     background-color: #FFF;
     padding-bottom: 45px;
@@ -847,6 +848,30 @@ h1 {
     .navbar-default .container {
         height: 50px;
     }
+    
+.img-shadow-videos-xs{
+    position: relative;
+    float: left;
+}
+
+.img-shadow-videos-xs::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: none;
+    -webkit-box-shadow: inset 2px -75px 30px -3px rgba(32, 59, 128, 0.75);
+    -moz-box-shadow: inset 2px -75px 30px -3px rgba(32, 59, 128, 0.75);
+    box-shadow: inset 2px -75px 30px -3px rgba(32, 59, 128, 0.75);
+    z-index: 9000;
+    
+}
+
+.img-shadow-videos-xs img{
+    float: left;
+}
 
 }
 
