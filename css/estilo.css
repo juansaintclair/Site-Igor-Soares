@@ -916,3 +916,7 @@ h1 {
 .dialog-close {
   cursor: pointer;
 }
+
+.padding-social-interno {
+    padding-top: 100px;
+}
