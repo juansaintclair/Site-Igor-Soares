@@ -912,3 +912,7 @@ h1 {
 .spacer-xs {
     height: 20px;
 }
+
+.dialog-close {
+  cursor: pointer;
+}
